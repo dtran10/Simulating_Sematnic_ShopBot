@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xml:base="http://www.retailerExample1.com/onlineCatalog">
+
+<Retailer rdf:ID="Retailer-1" xmlns="http://www.eBusiness.org/retailer#">
+ 
+   <location>Norcross, GA</location>
+   <address>6066 Cameron Pointe</address>
+   <webSite>www.bestStuff.com</webSite>
+ 
+   <catalog rdf:parseType="Collection">
+       
+      <Notebook rdf:ID="PC_TOP_08" xmlns="http://www.ontologyExample.org/ontology/pcspec#">
+ 
+          <memory>
+             <Memory>
+                <mem_capacity>1.0GB</mem_capacity>
+             </Memory>
+          </memory>
+ 
+          <processor>
+             <Processor>
+                <cpu_name>Intel Pentium M processor</cpu_name>
+                <cpu_speed>2.0GHz</cpu_speed>
+             </Processor>
+          </processor>
+  
+          <harddisk>
+             <HardDrive>
+                <hd_capacity>120GB</hd_capacity>
+             </HardDrive>
+          </harddisk>
+ 
+       </Notebook>
+     
+       <Processor rdf:ID="intel_m" xmlns="http://www.ontologyExample.org/ontology/pcspec#">
+          <cpu_name>Intel Pentium M processor</cpu_name>
+          <cpu_speed>2.0GHz</cpu_speed>
+          <cost>
+             <Money>
+                <price>$199.99</price>
+             </Money>
+          </cost>
+       </Processor>
+       
+       <Mointor rdf:ID="Monitor-Hanns-G" xmlns="http://www.ontologyExample.org/ontology/monitorspec#">
+          <dimension>
+             <Dimension>
+                <size>17</size>
+                <resolution>1440x900</resolution>
+             </Dimension>
+          </dimension>
+       </Mointor>
+ 
+       <DSLR rdf:ID="Nikon_D70" xmlns="http://www.liyangyu.com/camera#">
+          <body>
+             <Body>
+                <shutter>
+                  <ValueRange>
+                     <minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.00002</minValue>
+                  </ValueRange>
+               </shutter>
+             </Body>
+          </body>
+          <lens>
+             <Lens>
+                <zoomRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18-200mm</zoomRange>
+             </Lens>
+          </lens>
+        </DSLR>
+ 
+    </catalog>
+  
+</Retailer>
+  
+</rdf:RDF>

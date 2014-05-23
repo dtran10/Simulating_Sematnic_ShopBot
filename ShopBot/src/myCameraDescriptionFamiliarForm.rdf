@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:myCamera="http://www.liyangyu.com/camera#"
+         xml:base="http://www.liyangyu.com/shopbot/request">
+
+   <!-- here is what I am looking for -->
+ 
+   <myCamera:Digital rdf:ID="myDigitalCamera">
+ 
+      <myCamera:effectivePixel rdf:datatype="http://www.liyangyu.com/camera#MegaPixel">6.0</myCamera:effectivePixel>
+
+      <myCamera:body>
+         <myCamera:Body>
+            <myCamera:shutterSpeed>
+               <myCamera:ValueRange>
+                  <myCamera:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0005</myCamera:minValue>
+               </myCamera:ValueRange>
+            </myCamera:shutterSpeed>
+         </myCamera:Body>
+      </myCamera:body>
+
+      <myCamera:lens>
+         <myCamera:Lens>
+            <myCamera:focalLength rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18-200mm</myCamera:focalLength>
+            <myCamera:aperture>
+               <myCamera:ValueRange>
+                  <myCamera:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.8</myCamera:minValue>
+                  <myCamera:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">22</myCamera:maxValue>
+               </myCamera:ValueRange>
+            </myCamera:aperture>
+         </myCamera:Lens>
+      </myCamera:lens>
+ 
+   </myCamera:Digital>
+ 
+</rdf:RDF>
